@@ -7,11 +7,18 @@ A simple React-based Recipe Finder that allows users to search for recipes by in
 
 **🚀 Features**
 🔍 Search recipes by ingredient.
+
 🖼️ Display recipe cards with images and names.
+
 📖 View full recipe details (instructions, ingredients, etc.).
+
 ⚡ API integration using async/await.
+
 🎨 Responsive design with modern UI/UX.
+
 📱 Mobile-friendly layout.
+
+
 
 
 
