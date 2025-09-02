@@ -1,0 +1,231 @@
+/* ---------- Global Reset & Base ---------- */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+/* ---------- Header ---------- */
+.header {
+  /* background: #ff6b6b; */
+  background: #0A2540;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* default alignment */
+  min-height: calc(100vh - 80px);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Center content vertically when no results yet */
+.container.centered {
+  justify-content: center;
+}
+
+/* ---------- Search Bar ---------- */
+.search-bar {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 0.6rem;
+  width: 350px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 0.6rem 1rem;
+  margin-left: 0.5rem;
+  background: #0A2540;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-bar button:hover {
+  /* background: #ff4c4c; */
+  background: #1173d4;
+}
+
+/* ---------- Recipes Grid ---------- */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ---------- Recipe Card ---------- */
+.recipe-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-3px);
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.recipe-card h3 {
+  margin: 0.5rem 0;
+}
+
+.recipe-card button {
+  /* background: #ff6b6b; */
+  background: #0A2540;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.recipe-card button:hover {
+  /* background: #ff4c4c; */
+  /* background: #0f5aa5; */
+  background: #f30e0e;
+
+}
+
+/* ---------- Recipe Detail Page ---------- */
+.recipe-detail {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.recipe-detail img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.instructions {
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* ---------- Messages ---------- */
+.info-text {
+  color: #555;
+  margin-top: 1rem;
+}
+
+.error-text {
+  color: red;
+  margin-top: 1rem;
+}
+
+
+/* ---------- Back Button ---------- */
+.back-btn {
+  position: absolute;
+  top: 90px; /* Just below sticky header */
+  left: 20px;
+}
+
+.back-btn a {
+  /* background: #ff6b6b; */
+  background: #0A2540;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.back-btn a:hover {
+  background: #f30e0e;
+}
+
+
+
+
+
+
+
+/* ---------- Footer ---------- */
+.footer {
+  height: 5vh;                  
+  background: #0A2540;
+  color: white;
+  display: flex;                  
+  align-items: center;            
+  justify-content: center;        
+  text-align: center;
+  padding: 0.5rem;                
+  font-size: 14px;
+  border-top: 3px solid #0A2540;
+  box-sizing: border-box;   
+  margin-top: 12px;
+}
+
+.footer a {
+  color: #f30e0e;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #f30e0e;
+}
